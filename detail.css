@@ -1,11 +1,11 @@
 :root {
-  --bg: #120f09;
-  --ink: #222315;
-  --muted: #3f4232;
-  --paper: #c4c1a7;
-  --accent: #d96827;
-  --accent-rgb: 217, 104, 39;
-  --accent2: #d9a43d;
+  --bg: #28160e;
+  --ink: #2e1d13;
+  --muted: #664b39;
+  --paper: #fff8ec;
+  --accent: #c45422;
+  --accent-rgb: 196, 84, 34;
+  --accent2: #d5942f;
   --radius: 26px;
 }
 
@@ -21,7 +21,7 @@ a { color: inherit; }
 .logo-mark { display: grid; place-items: center; width: 38px; height: 38px; color: #17170c; background: linear-gradient(135deg, var(--accent), var(--accent2)); border-radius: 12px; }
 .back-link { display: inline-flex; align-items: center; gap: 9px; color: #e0e2c4; text-decoration: none; font-size: .86rem; font-weight: 700; }
 .back-link:hover { color: white; }
-.theme-toggle { display: inline-flex; align-items: center; gap: 8px; min-height: 38px; padding: 0 12px; color: #f1efd9; background: rgba(27,22,12,.48); border: 1px solid rgba(255,211,78,.34); border-radius: 999px; font: inherit; font-size: .76rem; font-weight: 800; cursor: pointer; }.theme-toggle::before { content: ""; width: 14px; height: 14px; border: 2px solid currentColor; border-radius: 50%; box-shadow: inset -4px -2px 0 rgba(255,255,255,.18); }.theme-toggle:hover { color: #fff; border-color: #d9a43d; }.theme-toggle:focus-visible { outline: 3px solid #d9a43d; outline-offset: 4px; }
+.theme-toggle { display: inline-flex; align-items: center; gap: 9px; min-height: 43px; padding: 4px 15px 4px 5px; color: #fff4df; background: rgba(62,31,16,.76); border: 1px solid rgba(239,173,79,.58); border-radius: 999px; box-shadow: 0 8px 22px rgba(10,5,1,.2), inset 0 1px 0 rgba(255,255,255,.12); font: inherit; font-size: .75rem; font-weight: 900; letter-spacing: .03em; cursor: pointer; transition: transform .2s ease, background .2s ease, border-color .2s ease, box-shadow .2s ease; }.theme-toggle::before { content: "☾"; display: grid; place-items: center; width: 31px; height: 31px; color: #5b260f; background: linear-gradient(135deg, #f3bd58, #d87728); border: 0; border-radius: 50%; box-shadow: 0 3px 9px rgba(0,0,0,.18); font: 900 1.05rem/1 "Segoe UI Symbol", sans-serif; }.theme-toggle.is-dark-active { color: #f8e2b2; background: rgba(13,10,7,.74); border-color: rgba(255,219,148,.4); }.theme-toggle.is-dark-active::before { content: "☀"; color: #9a4215; background: linear-gradient(135deg, #fff5ce, #edb14e); }.theme-toggle:hover { border-color: #f4c361; box-shadow: 0 11px 25px rgba(10,5,1,.28), inset 0 1px 0 rgba(255,255,255,.16); transform: translateY(-2px); }.theme-toggle:focus-visible { outline: 3px solid #ffd77b; outline-offset: 4px; }
 
 .detail-hero { position: relative; min-height: 720px; display: grid; align-items: center; overflow: hidden; color: #f2f2dc; background: radial-gradient(circle at 72% 46%, rgba(var(--accent-rgb),.28), transparent 30%), linear-gradient(135deg, #090805, #20190b); }
 .detail-hero::before { content: ""; position: absolute; inset: 0; opacity: .15; background-image: linear-gradient(rgba(255,255,255,.13) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,.13) 1px, transparent 1px); background-size: 64px 64px; mask-image: linear-gradient(to bottom, transparent, black 20%, transparent 95%); animation: detailGrid 20s linear infinite; }
@@ -140,7 +140,25 @@ body.theme-pink { --accent: #c85c2b; --accent-rgb: 200,92,43; --accent2: #d9a43d
 body.theme-green { --accent: #b66f2c; --accent-rgb: 182,111,44; --accent2: #d9a43d; }
 body.theme-orange { --accent: #d9792b; --accent-rgb: 217,121,43; --accent2: #d9a43d; }
 
+/* Neues helles Detailseiten-Design: die Illustrationen bleiben unverändert, alle Flächen werden warm und klar. */
+body:not(.dark-mode) { color-scheme: light; }
+body:not(.dark-mode) .content-block { background: linear-gradient(145deg, #fff8eb, #f3d2a4 58%, #f9e4bf); }
+body:not(.dark-mode) .content-block::before, body:not(.dark-mode) .education-section::before { opacity: .28; }
+body:not(.dark-mode) .info-card { border-color: rgba(var(--accent-rgb),.24); background: rgba(255,251,241,.9); box-shadow: 0 12px 35px rgba(94,48,19,.1); }
+body:not(.dark-mode) .education-section { background: linear-gradient(145deg, #f8e4bd, #eab979 57%, #f4d6a5); }
+body:not(.dark-mode) .education-use-grid > article { border-color: rgba(113,62,25,.2); background: rgba(255,250,238,.86); box-shadow: 0 12px 32px rgba(94,48,19,.1); }
+body:not(.dark-mode) .education-chance { background: rgba(255,243,211,.92); }
+body:not(.dark-mode) .education-risk { background: rgba(247,211,164,.9); }
+body:not(.dark-mode) .education-sources a, body:not(.dark-mode) .topic-nav a { border-color: rgba(113,62,25,.2); background: rgba(255,250,239,.86); }
+body:not(.dark-mode) .everyday-balance { background: linear-gradient(145deg, #fff2d9, #efc58b); }
+body:not(.dark-mode) .everyday-balance article { border-color: rgba(113,62,25,.18); background: rgba(255,250,239,.84); box-shadow: 0 10px 28px rgba(94,48,19,.09); }
+body:not(.dark-mode) .everyday-balance article:last-child { background: rgba(250,220,177,.88); }
+body:not(.dark-mode) .detail-note { color: #2e1d13; background: linear-gradient(130deg, #fff3da, #edbd7b 52%, #f7d5a1); }
+body:not(.dark-mode) .detail-note p { color: var(--muted); }
+body:not(.dark-mode) .topic-nav { background: #fff8ec; }
+
 body.dark-mode { --ink: #f0efd9; --muted: #c9c7ad; --paper: #17130d; color-scheme: dark; }.dark-mode .content-block, .dark-mode .education-section, .dark-mode .everyday-balance, .dark-mode .detail-note { background: #201a10; }.dark-mode .content-block::before, .dark-mode .education-section::before { opacity: .2; }.dark-mode .info-card, .dark-mode .wellbeing-card, .dark-mode .education-use-grid > article, .dark-mode .education-balance article, .dark-mode .topic-nav a { color: var(--ink); background: #30291a; border-color: rgba(217,164,61,.28); }.dark-mode .wellbeing-card.warning, .dark-mode .education-risk { background: #3b2c1b; }.dark-mode .education-chance { background: #342f1d; }.dark-mode .section-head > p, .dark-mode .info-card p, .dark-mode .wellbeing-card ul, .dark-mode .education-use-grid p, .dark-mode .education-balance ul, .dark-mode .detail-note p, .dark-mode .topic-nav span { color: var(--muted); }.dark-mode .education-sources a { color: var(--ink); background: #30291a; border-color: rgba(217,164,61,.28); }.dark-mode .theme-toggle { color: #f4efd8; background: rgba(255,255,255,.08); }
+.dark-mode .theme-toggle.is-dark-active { color: #f8e2b2; background: rgba(13,10,7,.74); border-color: rgba(255,219,148,.4); }
 
 @keyframes detailGrid { to { background-position: 64px 64px; } }
 @keyframes dots { to { background-position: 48px 48px; } }

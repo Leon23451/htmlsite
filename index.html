@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="style.css">
   <script src="theme.js" defer></script>
   <script src="script.js" defer></script>
+  <script src="newsfeed.js" defer></script>
   <script src="embed.js" defer></script>
 </head>
 <body>
@@ -29,7 +30,7 @@
         <a href="#grundlagen">KI im Alltag</a>
         <a href="#alltag">Im Alltag</a>
         <a href="#chancen">Chancen & Risiken</a>
-        <a href="#stimmen">Aktuelles</a>
+        <a href="#newsfeed">Aktuelles</a>
         <a href="quiz.html">Quiz</a>
         <a class="nav-cta" href="#fazit">Fazit</a>
       </div>
@@ -71,6 +72,21 @@
           <span class="node node-three"></span><span class="node node-four"></span>
         </div>
       </div>
+      <aside class="hero-newsfeed" id="newsfeed" data-newsfeed role="region" aria-roledescription="Karussell" aria-labelledby="newsfeed-heading">
+        <p id="newsfeed-heading" class="hero-feed-label"><span aria-hidden="true"></span> KI im Alltag · Feed</p>
+        <div class="hero-feed-meta"><span data-feed-type>Realer Use Case</span><span data-feed-date>Schule & Studium</span></div>
+        <p class="hero-feed-category" data-feed-category>Lernen</p>
+        <h2 data-feed-title>KI unterstützt beim Lernen – aber nicht beim Abschreiben.</h2>
+        <p class="hero-feed-text" data-feed-text>Chatbots können Lernfragen erklären, Übungen vorbereiten und beim Strukturieren helfen.</p>
+        <p class="hero-feed-relevance"><strong>Alltagsbezug:</strong> <span data-feed-relevance>Viele Schülerinnen, Schüler und Studierende nutzen solche Werkzeuge bereits beim Vorbereiten und Wiederholen.</span></p>
+        <a class="hero-feed-source" data-feed-source href="https://www.kmk.org/aktuelles/pressearchiv/mitteilung/bildungsministerkonferenz-verabschiedet-handlungsempfehlung-zum-umgang-mit-kuenstlicher-intelligenz-1.html" target="_blank" rel="noopener">Quelle öffnen <span aria-hidden="true">↗</span></a>
+        <div class="hero-feed-controls">
+          <button class="hero-feed-button" type="button" data-feed-previous aria-label="Vorherigen Feed-Beitrag anzeigen"><span aria-hidden="true">←</span><span>Zurück</span></button>
+          <button class="hero-feed-button" type="button" data-feed-next aria-label="Nächsten Feed-Beitrag anzeigen"><span>Weiter</span><span aria-hidden="true">→</span></button>
+        </div>
+        <div class="hero-feed-progress" aria-hidden="true"><span data-feed-progress></span></div>
+        <p class="sr-only" data-feed-status aria-live="polite"></p>
+      </aside>
     </section>
 
     <section class="section intro" id="grundlagen">
