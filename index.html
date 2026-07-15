@@ -6,6 +6,7 @@
   <meta name="description" content="Künstliche Intelligenz im Alltag: Anwendungen, Chancen, Risiken und ein Blick in die Zukunft.">
   <title>KI im Alltag | Chancen & Herausforderungen</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="modern-ui.css">
   <script src="script.js" defer></script>
   <script src="newsfeed.js" defer></script>
   <script src="embed.js" defer></script>
@@ -55,20 +56,10 @@
           </ul>
         </div>
 
-        <div class="hero-visual" aria-label="Illustration eines digitalen KI-Netzwerks">
-          <div class="orbit orbit-one"></div>
-          <div class="orbit orbit-two"></div>
-          <div class="ai-core">
-            <span class="core-label">KI</span>
-            <span class="core-pulse"></span>
-          </div>
-          <div class="float-card card-chat"><span aria-hidden="true">✦</span> Chat</div>
-          <div class="float-card card-route"><span aria-hidden="true">⌁</span> Route</div>
-          <div class="float-card card-image"><span aria-hidden="true">▧</span> Bild</div>
-          <div class="float-card card-voice"><span aria-hidden="true">◖</span> Sprache</div>
-          <span class="node node-one"></span><span class="node node-two"></span>
-          <span class="node node-three"></span><span class="node node-four"></span>
-        </div>
+        <figure class="hero-photo">
+          <img src="assets/photos/hero-lernen.jpg" alt="Laptop, Smartphone und Notizen auf einem Schreibtisch beim digitalen Lernen">
+          <figcaption>KI ist oft bereits Teil gewohnter Abläufe – beim Lernen, Planen und Kommunizieren.</figcaption>
+        </figure>
       </div>
     </section>
 
@@ -139,35 +130,35 @@
             <span class="card-footer"><span class="tag">Kommunikation</span><span class="card-arrow" aria-hidden="true">↗</span></span>
           </a>
           <a class="app-card app-voice reveal" href="sprachassistenten.html">
-            <div class="application-visual"><img src="assets/applications/sprachassistent.png" alt="Futuristische Darstellung eines Sprachassistenten mit Mikrofon und Schallwellen"></div>
+            <div class="application-visual"><img src="assets/photos/sprachassistenten.jpg" alt="Smartphone neben einem Laptop als Zugang zu Sprachassistenten"></div>
             <span class="card-number">02</span>
             <h3>Sprachassistenten</h3>
             <p>Timer beim Kochen, Musik im Wohnzimmer oder eine Erinnerung für morgen: Sprache kann viele kleine Handgriffe ersetzen.</p>
             <span class="card-footer"><span class="tag">Sprache</span><span class="card-arrow" aria-hidden="true">↗</span></span>
           </a>
           <a class="app-card app-navigation reveal" href="navigation.html">
-            <div class="application-visual"><img src="assets/applications/navigation.png" alt="Dreidimensionale Stadtkarte mit leuchtender Route und Zielmarkierung"></div>
+            <div class="application-visual"><img src="assets/photos/navigation.jpg" alt="Smartphone mit Navigation in einer Fahrzeughalterung"></div>
             <span class="card-number">03</span>
             <h3>Navigation</h3>
             <p>Auf dem Weg zur Schule oder zum Arzt kann Navigation Stau erkennen, Alternativen zeigen und die Ankunft besser planbar machen.</p>
             <span class="card-footer"><span class="tag">Mobilität</span><span class="card-arrow" aria-hidden="true">↗</span></span>
           </a>
           <a class="app-card app-image reveal" href="bildgeneratoren.html">
-            <div class="application-visual"><img src="assets/applications/bildgenerator.png" alt="Kreativmaschine, die aus einer Eingabe verschiedene Bildwelten erzeugt"></div>
+            <div class="application-visual"><img src="assets/photos/bildgeneratoren.jpg" alt="Junge Menschen entwickeln gemeinsam einen digitalen Entwurf am Laptop"></div>
             <span class="card-number">04</span>
             <h3>Bildgeneratoren</h3>
             <p>Für ein Plakat, Moodboard oder Präsentationsentwurf entstehen schnell Bildideen – ihre Herkunft muss dabei erkennbar bleiben.</p>
             <span class="card-footer"><span class="tag">Kreativität</span><span class="card-arrow" aria-hidden="true">↗</span></span>
           </a>
           <a class="app-card app-medicine reveal" href="medizin.html">
-            <div class="application-visual"><img src="assets/applications/medizin.png" alt="Leuchtendes anatomisches Herz in einem KI-gestützten medizinischen Scanner"></div>
+            <div class="application-visual"><img src="assets/photos/medizin.jpg" alt="Ärztin betrachtet medizinische Informationen auf einem Tablet"></div>
             <span class="card-number">05</span>
             <h3>Medizin</h3>
             <p>In Praxen und Kliniken kann KI auffällige Stellen in Bildern markieren. Fachleute entscheiden, was der Hinweis bedeutet.</p>
             <span class="card-footer"><span class="tag">Gesundheit</span><span class="card-arrow" aria-hidden="true">↗</span></span>
           </a>
           <a class="app-card app-drive reveal" href="autonomes-fahren.html">
-            <div class="application-visual"><img src="assets/applications/autonomes-fahren.png" alt="Futuristisches Fahrzeug mit sichtbaren Sensorfeldern in einer Modellstadt"></div>
+            <div class="application-visual"><img src="assets/photos/autonomes-fahren.jpg" alt="Modernes Fahrzeug fährt durch eine Stadtstraße"></div>
             <span class="card-number">06</span>
             <h3>Autonomes Fahren</h3>
             <p>Robotaxis zeigen bereits, wie KI Fahrten übernehmen kann. Sicherheit, klare Regeln und menschliche Hilfe bleiben entscheidend.</p>
@@ -225,7 +216,7 @@
           </article>
 
           <article class="balance-card risk reveal">
-            <div class="balance-title"><span aria-hidden="true">!</span><div><small>Verantwortung</small><h3>Herausforderungen</h3></div></div>
+            <div class="balance-title"><span class="risk-symbol" aria-hidden="true"></span><div><small>Verantwortung</small><h3>Herausforderungen</h3></div></div>
             <ul>
               <li><span>01</span><div><strong>Überzeugend falsche Antworten</strong><p>Chatbots können Quellen erfinden und Karten- oder Verkehrsdaten können veraltet sein – wichtige Angaben müssen geprüft werden.</p></div></li>
               <li><span>02</span><div><strong>Persönliche Daten</strong><p>Standort, Stimme, Lerntexte und Gesundheitsdaten verraten viel. Einstellungen und Eingaben sollten bewusst gewählt werden.</p></div></li>
