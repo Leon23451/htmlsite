@@ -10,7 +10,8 @@ const takeaways = {
   'Stimme im vernetzten Zuhause': 'Kernaussage: Sprachsteuerung spart kleine Handgriffe, funktioniert aber nur mit passenden Einstellungen und bewusstem Datenschutz.',
   'Verkehr vorhersagen, Route anpassen': 'Kernaussage: Eine Route ist eine hilfreiche Prognose – Verkehrszeichen und die Situation vor Ort gelten immer zuerst.',
   'Von der Idee zur Gestaltung': 'Kernaussage: Generative KI hilft beim ersten Entwurf, die Auswahl und Kennzeichnung bleiben menschliche Aufgaben.',
-  'KI-gestützte Medizinprodukte': 'Kernaussage: Medizinische KI kann Hinweise geben; Diagnose und Verantwortung bleiben beim Fachpersonal.'
+  'KI-gestützte Medizinprodukte': 'Kernaussage: Medizinische KI kann Hinweise geben; Diagnose und Verantwortung bleiben beim Fachpersonal.',
+  'Noland Arbaugh steuert Computer mit Gedanken': 'Kernaussage: Neuralink beschreibt einen experimentellen Einsatz, bei dem ein Studienteilnehmer digitale Geräte über neuronale Signale bedient.'
 };
 
 const everydayBalances = {

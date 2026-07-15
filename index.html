@@ -25,8 +25,8 @@
         <span></span><span></span><span></span>
       </button>
       <div class="nav-links" id="nav-links">
-        <a href="#grundlagen">KI im Alltag</a>
-        <a href="#alltag">Im Alltag</a>
+        <a class="nav-pill nav-pill-foundation" href="#grundlagen">KI kurz erklärt</a>
+        <a class="nav-pill nav-pill-applications" href="#alltag">Anwendungen entdecken</a>
         <a href="#chancen">Chancen & Risiken</a>
         <a href="#newsfeed">Aktuelles</a>
         <a href="quiz.html">Quiz</a>
@@ -49,9 +49,9 @@
             <a class="button button-ghost" href="quiz.html">10 Fragen starten</a>
           </div>
           <ul class="hero-facts" aria-label="Themen der Website">
-            <li><strong>6</strong><span>Anwendungsbereiche</span></li>
-            <li><strong>2</strong><span>Seiten der KI</span></li>
-            <li><strong>1</strong><span>Frage: Wie nutzen wir sie?</span></li>
+            <li><strong>6</strong><span>Alltagsbeispiele</span></li>
+            <li><strong>2</strong><span>Perspektiven: Nutzen & Grenzen</span></li>
+            <li><strong>1</strong><span>Leitfrage: Wie nutzen wir KI?</span></li>
           </ul>
         </div>
 
@@ -103,13 +103,13 @@
         </div>
         <div class="intro-copy">
           <p class="lead">KI begegnet uns vor allem dann, wenn ein Gerät aus vielen Möglichkeiten eine passende Hilfe für genau diesen Moment auswählt.</p>
-          <p>Sie steckt zum Beispiel in einer Route bei Stau, in einem Vorschlag für den nächsten Song oder in einer Antwort auf eine Lernfrage. Wichtig: KI liefert Vorschläge. Ob sie passen und fair sind, prüfen weiterhin Menschen.</p>
-          <div class="process" aria-label="Drei typische Alltagssituationen mit KI">
-            <div><span>1</span><strong>Sprache</strong><small>Timer beim Kochen setzen</small></div>
+          <p>Ein Beispiel: Du bereitest eine Präsentation über erneuerbare Energien vor. Ein Chatbot sortiert deine Ideen, ein Bildgenerator macht einen ersten Entwurf sichtbar – und du prüfst anschließend Fakten, Quellen und die Kennzeichnung.</p>
+          <div class="process" aria-label="Drei Schritte bei einem Schulprojekt mit KI">
+            <div><span>1</span><strong>Ideen sortieren</strong><small>Chatbot erstellt eine Gliederung</small></div>
             <i aria-hidden="true">→</i>
-            <div><span>2</span><strong>Route</strong><small>Stau umfahren</small></div>
+            <div><span>2</span><strong>Entwurf gestalten</strong><small>Bildidee für eine Folie erzeugen</small></div>
             <i aria-hidden="true">→</i>
-            <div><span>3</span><strong>Idee</strong><small>Entwurf sichtbar machen</small></div>
+            <div><span>3</span><strong>Prüfen</strong><small>Quellen vergleichen und KI nennen</small></div>
           </div>
         </div>
       </div>
@@ -179,11 +179,26 @@
 
     <section class="local-context" aria-labelledby="deutschland-alltag">
       <div class="container">
-        <div class="section-heading reveal"><div><p class="section-kicker">Alltag bei uns</p><h2>KI in Situationen, die <span>wir kennen.</span></h2></div><p>Diese Beispiele brauchen keine Zukunft: Sie können heute auf dem Handy, zu Hause oder unterwegs vorkommen.</p></div>
+        <div class="section-heading reveal"><div><p class="section-kicker">Alltag bei uns</p><h2>KI in Situationen, die <span>wir kennen.</span></h2></div><p>Diese Beispiele brauchen keine Zukunft: Sie können heute auf dem Handy, zu Hause oder beim Lernen vorkommen. In jedem Fall übernimmt ein KI-System eine konkrete Aufgabe.</p></div>
         <div class="local-grid">
-          <article class="local-card reveal"><span>01</span><h3>Auf dem Schulweg</h3><p>Eine Karten-App schlägt vor dem Losfahren eine Route vor, warnt bei Stau und hilft beim Vergleich von Fußweg, Fahrrad oder Bus und Bahn.</p></article>
-          <article class="local-card reveal"><span>02</span><h3>Zu Hause</h3><p>Per Sprachbefehl einen Timer beim Kochen stellen, Musik starten oder für den nächsten Morgen an einen Termin erinnern lassen.</p></article>
-          <article class="local-card reveal"><span>03</span><h3>Für Schule & Freizeit</h3><p>Ein Chatbot kann beim Strukturieren einer Präsentation helfen oder Bildideen liefern. Fakten, Quellen und Kennzeichnung bleiben eigene Aufgaben.</p></article>
+          <article class="local-card reveal" tabindex="0" aria-label="Use Case: KI-Navigation auf dem Schulweg">
+            <div class="local-card-inner">
+              <div class="local-card-face local-card-front" aria-hidden="true"><span class="local-number">01</span><p class="local-usecase">Use Case · KI-Navigation</p><h3>Stau auf dem Schulweg</h3><p>Eine Karten-App soll nicht nur den Weg anzeigen, sondern Verkehrslage und Ankunftszeit einschätzen.</p></div>
+              <div class="local-card-face local-card-back" aria-hidden="true"><p class="local-usecase">Was macht die KI?</p><h3>Verkehrsmuster vergleichen</h3><p>Google Maps kombiniert historische Verkehrsmuster mit aktuellen Standort- und Meldedaten. Daraus entsteht eine Prognose: Die App kann eine andere Route oder Busverbindung vorschlagen.</p><p class="local-example"><strong>Wichtig:</strong> Die Prognose ersetzt keine Verkehrsschilder und kann bei Baustellen oder kurzfristigen Sperrungen falsch liegen.</p></div>
+            </div>
+          </article>
+          <article class="local-card reveal" tabindex="0" aria-label="Use Case: KI-Sprachassistent beim Kochen">
+            <div class="local-card-inner">
+              <div class="local-card-face local-card-front" aria-hidden="true"><span class="local-number">02</span><p class="local-usecase">Use Case · Sprach-KI</p><h3>Beim Kochen mit Stimme</h3><p>Ein Sprachassistent soll gesprochene Wünsche verstehen und direkt eine passende Aktion ausführen.</p></div>
+              <div class="local-card-face local-card-back" aria-hidden="true"><p class="local-usecase">Was macht die KI?</p><h3>Absicht aus Sprache erkennen</h3><p>Die KI wandelt Sprache in Text um, erkennt die Absicht „Timer stellen“ und startet die gewünschte Funktion. Bei ChatGPT Live kann man außerdem während der Antwort unterbrechen und nachfragen.</p><p class="local-example"><strong>Beispiel:</strong> „Stelle einen Timer auf zehn Minuten und sag mir danach den nächsten Rezeptschritt.“</p></div>
+            </div>
+          </article>
+          <article class="local-card reveal" tabindex="0" aria-label="Use Case: KI-Unterstützung bei einem Schulprojekt">
+            <div class="local-card-inner">
+              <div class="local-card-face local-card-front" aria-hidden="true"><span class="local-number">03</span><p class="local-usecase">Use Case · Lernen & Gestalten</p><h3>Ein Schulprojekt vorbereiten</h3><p>Chatbot und Bildgenerator helfen bei den ersten Ideen – die eigentliche Leistung bleibt bei den Lernenden.</p></div>
+              <div class="local-card-face local-card-back" aria-hidden="true"><p class="local-usecase">Was macht die KI?</p><h3>Erklären, strukturieren, entwerfen</h3><p>Ein Chatbot kann eine Gliederung vorschlagen oder Übungsfragen stellen. Ein Bildgenerator macht eine Visualisierung sichtbar. Fakten, Quellen, Rechte und der KI-Anteil müssen anschließend selbst geprüft werden.</p><p class="local-example"><strong>Merksatz:</strong> KI liefert einen Entwurf – verstehen, entscheiden und überarbeiten müssen Menschen.</p></div>
+            </div>
+          </article>
         </div>
       </div>
     </section>
@@ -195,27 +210,27 @@
             <p class="section-kicker">03 · Abwägen</p>
             <h2>Zwei Seiten derselben <span>Technologie</span></h2>
           </div>
-          <p>KI ist weder automatisch gut noch schlecht. Entscheidend sind ihr Zweck, die verwendeten Daten und die Regeln, nach denen sie eingesetzt wird.</p>
+          <p>Dasselbe System kann im richtigen Moment entlasten und im falschen Moment schaden. Entscheidend sind der Zweck, die Daten, die Kontrolle und die Frage, wer am Ende Verantwortung trägt.</p>
         </div>
 
         <div class="balance-grid">
           <article class="balance-card chance reveal">
             <div class="balance-title"><span aria-hidden="true">↗</span><div><small>Potenzial</small><h3>Chancen</h3></div></div>
             <ul>
-              <li><span>01</span><div><strong>Zeit sparen</strong><p>Wiederkehrende Aufgaben können schneller erledigt werden.</p></div></li>
-              <li><span>02</span><div><strong>Menschen unterstützen</strong><p>Übersetzungen, Vorlesefunktionen und Assistenzsysteme können Barrieren abbauen.</p></div></li>
-              <li><span>03</span><div><strong>Muster erkennen</strong><p>Große Datenmengen lassen sich etwa in Medizin und Forschung auswerten.</p></div></li>
-              <li><span>04</span><div><strong>Kreativität erweitern</strong><p>KI kann Entwürfe, Ideen und neue Darstellungsformen liefern.</p></div></li>
+              <li><span>01</span><div><strong>Alltag schneller organisieren</strong><p>Navigation vergleicht Routen, Sprachassistenten starten Routinen und Chatbots helfen beim ersten Plan.</p></div></li>
+              <li><span>02</span><div><strong>Individueller lernen</strong><p>Ein Chatbot kann eine Erklärung vereinfachen, Rückfragen stellen und passende Übungsaufgaben erstellen.</p></div></li>
+              <li><span>03</span><div><strong>Barrieren abbauen</strong><p>Vorlesen, Übersetzen, Sprachsteuerung und automatische Untertitel machen Informationen zugänglicher.</p></div></li>
+              <li><span>04</span><div><strong>Fachleute entlasten</strong><p>In der Medizin kann KI Bilder vorsortieren oder auffällige Muster markieren; die Entscheidung bleibt beim Fachpersonal.</p></div></li>
             </ul>
           </article>
 
           <article class="balance-card risk reveal">
             <div class="balance-title"><span aria-hidden="true">!</span><div><small>Verantwortung</small><h3>Herausforderungen</h3></div></div>
             <ul>
-              <li><span>01</span><div><strong>Fehler und Vorurteile</strong><p>Einseitige Trainingsdaten können zu falschen oder unfairen Ergebnissen führen.</p></div></li>
-              <li><span>02</span><div><strong>Datenschutz</strong><p>Persönliche und sensible Informationen dürfen nicht unbedacht eingegeben werden.</p></div></li>
-              <li><span>03</span><div><strong>Täuschend echte Inhalte</strong><p>Deepfakes erschweren die Unterscheidung zwischen echt und künstlich.</p></div></li>
-              <li><span>04</span><div><strong>Veränderung der Arbeit</strong><p>Berufe und Aufgaben wandeln sich; neue Kenntnisse werden wichtiger.</p></div></li>
+              <li><span>01</span><div><strong>Überzeugend falsche Antworten</strong><p>Chatbots können Quellen erfinden und Karten- oder Verkehrsdaten können veraltet sein – wichtige Angaben müssen geprüft werden.</p></div></li>
+              <li><span>02</span><div><strong>Persönliche Daten</strong><p>Standort, Stimme, Lerntexte und Gesundheitsdaten verraten viel. Einstellungen und Eingaben sollten bewusst gewählt werden.</p></div></li>
+              <li><span>03</span><div><strong>Unfaire Ergebnisse</strong><p>Wenn Trainingsdaten bestimmte Gruppen schlechter abbilden, kann ein System Menschen unterschiedlich behandeln.</p></div></li>
+              <li><span>04</span><div><strong>Abhängigkeit und Täuschung</strong><p>Fertige Antworten können eigenes Denken ersetzen; realistisch wirkende KI-Bilder, Stimmen oder Videos müssen gekennzeichnet werden.</p></div></li>
             </ul>
           </article>
         </div>
